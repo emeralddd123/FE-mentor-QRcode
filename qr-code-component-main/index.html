@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | QR code component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    .body{
+      font-size: 11px;
+      background-color: rgb(236, 244, 245);
+    }
+    .grid_container{
+      display: grid;
+      border-width: 2;
+      border-radius: 10px;
+      border-color: red;
+      justify-content: center;
+      
+  
+    }
+    .grid-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        border-radius: 10px;
+        width: 300px;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        position: relative;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+      }
+    .grid-item-item{
+      text-align: center;
+      margin-top: 10px;
+      
+    }
+
+    .h2{
+      font-family:'Times New Roman';
+      color: rgb(33, 33, 112);
+    }
+    .p{
+      font-size: 10px;
+      font-family: 'Arial';
+      font-weight: 200;
+      font-style: normal;
+      color: rgb(160, 160, 185);
+    }
+    .img{
+        max-width: 270px;
+        border-radius: 10px;
+        display: block; /* remove extra space below image */
+    }
+  </style>
+</head>
+<body class="body">
+
+
+  
+  <div class="grid_container">
+    <div class="grid-item">
+      <div class="grid-item-item" style="margin-top: 5px;">
+        <img class="img" src="images/image-qr-code.png" alt="some images">
+      </div>
+      <div class="grid-item-item" style="padding-left: 20px; padding-right: 20px;">
+        <h2 class="h2">Improving my frontend skills by building projects</h2>
+      </div>
+      <div class="grid-item-item" style="padding-left: 40px; padding-right: 40px; margin-top: 0px;">
+        <p class="p">Scan the Qr code to visit frontend mentor and take your 
+          frontend skills to the next level
+        </p>
+      </div>
+      
+    </div>
+    
+  </div>
+</body>
+</html>
